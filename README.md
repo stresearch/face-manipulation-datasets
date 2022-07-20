@@ -24,7 +24,7 @@ We created two partitions of image data for training and testing purposes.
 - The five manipulations consist of:
      - `smile` (smile added or enhanced)
      - `not smile` (smile removed or reduced)
-     -  `young` (face is modified to appear younger)
+     - `young` (face is modified to appear younger)
      - `old` (face is modified to appear older)
      - `surprised` (face is modified to include a surprised expression).  
 - The testing partition contains a total of 7,644 images and 

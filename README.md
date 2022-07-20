@@ -1,5 +1,6 @@
 # Face Manipulation Datasets <!-- omit in toc -->
-Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools
+
+[*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov STR, Woburn, Massachusetts, United States*](report.pdf) 
 
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)

@@ -3,7 +3,6 @@ Comprehensive Dataset of Face Manipulations for Development and Evaluation Foren
 
 ## CelebHQ-FM (Face Manipulations)
 
-### Dataset
 We compiled a dataset of edited portrait-style images. The image data was sourced from a subset of the [CelebA-HQ dataset](\cite{CelebAMask-HQ}). In our subset, we only consider identities that appear at least twice (i.e., there are at least two images of a given identity) in the image data.
 
 ![](celebhqfm.png)
@@ -33,63 +32,50 @@ We created two partitions of image data for training and testing purposes.
 ### Evaluation Protocol
 For our portrait-style face manipulation dataset, we supply two challenges: detection and classification. A description of both challenges and associated outputs are described in the following sections.
 
-#### Detection
-
-The objective of the detection experiment is to identify whether a given image has been manipulated. For a given image in the testing partition return: 
-\begin{itemize}
-     \item (string) `$<$filename$>$` : Image filename
-     \item (bool) [0,1] : Not edited or Edited
-\end{itemize}
-
-We measure balanced detection accuracy as the proportion of images that are correctly recognized as either edited or not edited.
-
-
-#### Classification
-
-The objective of the classification experiment is to classify the type of edit in a manipulated image. For a given image in the testing partition return: 
-\begin{itemize}
-     \item (string) `$<$filename$>$` : Image filename
-     \item (string) `pristine` : \textbf{if} not edited; `$<$edit{\_}type$>$` : \textbf{ if} Edited
-\end{itemize}
+- Detection: 
+     - The objective of the detection experiment is to identify whether a given image has been manipulated. For a given image in the testing partition return: 
+     - We measure balanced detection accuracy as the proportion of images that are correctly recognized as either edited or not edited.
+- Classification
+     - The objective of the classification experiment is to classify the type of edit in a manipulated image. For a given image in the testing partition return: 
 
 ## FFHQ-FM (Face Manipulations) in-the-wild
 
-### Dataset
-We compiled a dataset of edited in-the-wild-style images. The image data was sourced from a subset of the Flickr-Faces-HQ (FFHQ) [3]. The FFHQ dataset consists of 70,000 high-quality in-the-wild images. The authors of the FFHQ datset posit that the FFHQ data is much more variant in terms of age, ethnicity, background, and presence of facial covariates (e.g., eyeglasses, headwear) compared to CelebA-HQ. A version of the dataset consists futher of 70,000 detected, aligned, and cropped faces, which are saved at a resolution of 1024x1024 (a version at 128x128 also exists), but we only consider the raw, full-scene images.
+We compiled a dataset of edited in-the-wild-style images. The image data was sourced from a subset of the [Flickr-Faces-HQ (FFHQ)(link) [3].
+- Our edited in-the-wild dataset consists of a randomly sampled subset of the 70,000 raw in-the-wild FFHQ images.
+-  In our subset, we allow for the possibility that an image contains more than one person (face). This potentially adds an additional challenge in detecting and localizing edited faces. 
 
-Our edited in-the-wild dataset consists of a randomly sampled subset of the 70,000 raw in-the-wild FFHQ images. In our subset, we allow for the possibility that an image contains more than one person (face). This potentially adds an additional challenge in detecting and localizing edited faces. We created two partitions of image data for training and testing (validation) purposes. The training partition and test partition contain totals of 1,508 and 1,403 images, respectively. Within each partition, approximately 50\% of the images are edited, while the remaining images are `pristine` (i.e., not edited). In the training partition, 759 images are edited and 750 are pristine. For the testing partition, 652 images are edited and 750 are pristine. All images are saved in .jpg format with a randomly chosen quality factor in the set $Q_f \in [75,80,85,90]$.
+![](ffhq-fm.png)
 
-Unlike the portrait-style images, each edited image is only subject to a single edit type. In other words, there are not multiple copies of the same underlying image but with different edits applied. Images that are edited are subject to one of six possible manipulations. These include `smile`, `not{\_}smile`, `young`, `old`, `male`, `female`. We adopt the approach from Tzaban et al. to inject edits to in-the-wild images [4]. Edits are localized to a region of the full-scene image. This is in contrast to the portrait-style face manipulation dataset, where images are fully synthesized from face-based GAN's. For the images in the in-the-wild face manipulation dataset that are edited, we also provide a binary mask that captures the spatial image region where the edit was performed and transplanted back into the image. The edit region is identified using a modified BiSeNet for faces [5].
+
+**Manipulation Model:** We adopt the approach from Tzaban et al. to inject edits to in-the-wild images [4]. Edits are localized to a region of the full-scene image. This is in contrast to the portrait-style face manipulation dataset, where images are fully synthesized from face-based GAN's.
+
+We created two partitions of image data for training and testing (validation) purposes. 
+- The training partition and test partition contain totals of 1,508 and 1,403 images, respectively.
+- Within each partition, approximately 50\% of the images are edited, while the remaining images are `pristine` (i.e., not edited). 
+- In the training partition, 759 images are edited and 750 are pristine.
+-  For the testing partition, 652 images are edited and 750 are pristine.
+-  All images are saved in .jpg format with a randomly chosen quality factor in the set $Q_f \in [75,80,85,90]$.
+- Unlike the portrait-style images, each edited image is only subject to a single edit type. In other words, there are not multiple copies of the same underlying image but with different edits applied. 
+- Images that are edited are subject to one of six possible manipulations. These include `smile`, `not_smile`, `young`, `old`, `male`, `female`. 
+- For the images in the in-the-wild face manipulation dataset that are edited, we also provide a binary mask that captures the spatial image region where the edit was performed and transplanted back into the image. The edit region is identified using a modified BiSeNet for faces [5].
 
 ### Evaluation Protocol
 We supply three challenges: detection, localization, and classification. A description of each challenge and outputs are described in the following sections.
 
-#### Detection
+- Detection
+     - The objective of the detection experiment is to identify whether a given image has been manipulated.
 
-The objective of the detection experiment is to identify whether a given image has been manipulated. For a given image in the testing partition return: 
-\begin{itemize}
-     \item (string) `$<$filename$>$` : Image filename
-     \item (bool) [0,1] : Not edited or Edited
-\end{itemize}
+- Localization
+     - The objective of the localization experiment is to identify the specific image-region where an edit exists. 
+     - For a given image in the testing partition, users must generate a binary mask, $\hat{M}$, denoting the estimated edit region. The estimated mask is compared against the ground truth, $M$ using Matthews Correlation Coefficient (MCC). 
+     - The MCC (phi coefficient, or mean-square contingency coefficient) is a measure of association for binary variables. MCC is computed from the confusion matrix of the pixel-based binary estimations. This is mathematically described in Equation \eqref{eq:mcc}, where TP denotes True Positive ($M_k=\hat{M}_k=1$), TN denotes True Negative ($M_k=\hat{M}_k=0$), FP denotes False Positive ($M_k=0$, $\hat{M}_k=1$), and FN denotes False Negative ($M_k=1$, $\hat{M}_k=0$).
+    - $MCC = \frac{TP\cdot TN - FP\cdot FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}$
 
-#### Localization
 
-The objective of the localization experiment is to identify the specific image-region where an edit exists. For a given image in the testing partition, users must generate a binary mask, $\hat{M}$, denoting the estimated edit region. The estimated mask is compared against the ground truth, $M$ using Matthews Correlation Coefficient (MCC). The MCC (phi coefficient, or mean-square contingency coefficient) is a measure of association for binary variables. MCC is computed from the confusion matrix of the pixel-based binary estimations. This is mathematically described in Equation \eqref{eq:mcc}, where TP denotes True Positive ($M_k=\hat{M}_k=1$), TN denotes True Negative ($M_k=\hat{M}_k=0$), FP denotes False Positive ($M_k=0$, $\hat{M}_k=1$), and FN denotes False Negative ($M_k=1$, $\hat{M}_k=0$).
+- Classification
+     - The objective of the classification experiment is to classify the type of edit in a manipulated image.
 
-\begin{equation}
-    MCC = \frac{TP\cdot TN - FP\cdot FN}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}
-    \label{eq:mcc}
-\end{equation}
-
-#### Classification
-
-The objective of the classification experiment is to classify the type of edit in a manipulated image. For a given image in the testing partition return: 
-\begin{itemize}
-     \item (string) `$<$filename$>$` : Image filename
-     \item (string) `pristine` : \textbf{if} not edited; `$<$edit{\_}type$>$` : \textbf{ if} Edited
-\end{itemize}
-
-In our in-the-wild face manipulation dataset the types of edits that are present in the training partition are also represented in the testing partition. Similarly, the types of edits that are in the testing partition are also represented in the training partition. Thus, the classification problem for this dataset is \textit{closed-set}. This is in contrast to the portrait-style data, where novel edit types exist in the testing partition. We encourage users utilizing this data and challenge problem to consider \textit{open-set} solutions as the set of potential edit types is near-unlimited.
+>In our in-the-wild face manipulation dataset the types of edits that are present in the training partition are also represented in the testing partition. Similarly, the types of edits that are in the testing partition are also represented in the training partition. Thus, the classification problem for this dataset is `closed-set`. This is in contrast to the portrait-style data, where novel edit types exist in the testing partition. We encourage users utilizing this data and challenge problem to consider `open-set` solutions as the set of potential edit types is near-unlimited.
 
 ## References
 [1] C.-H. Lee, Z. Liu, L. Wu, and P. Luo. Maskgan: Towards diverse and interactive

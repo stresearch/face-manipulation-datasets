@@ -1,5 +1,11 @@
-# Face Manipulation Datasets
+# Face Manipulation Datasets <!-- omit in toc -->
 Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools
+
+- [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
+  - [Evaluation Protocol](#evaluation-protocol)
+- [FFHQ-FM (Face Manipulations) in-the-wild](#ffhq-fm-face-manipulations-in-the-wild)
+  - [Evaluation Protocol](#evaluation-protocol-1)
+- [References](#references)
 
 ## CelebHQ-FM (Face Manipulations)
 

@@ -6,7 +6,9 @@ Comprehensive Dataset of Face Manipulations for Development and Evaluation Foren
 ### Dataset
 We compiled a dataset of edited portrait-style images. The image data was sourced from a subset of the [CelebA-HQ dataset](\cite{CelebAMask-HQ}). In our subset, we only consider identities that appear at least twice (i.e., there are at least two images of a given identity) in the image data.
 
-- Manipulation Model: We applied the [Pivotal Tuning]() approach by Roich et al. to create each manipulated image [2].
+![](celebhqfm.png)
+
+**Manipulation Model:** We applied the [Pivotal Tuning]() approach by Roich et al. to create each manipulated image [2].
 
 We created two partitions of image data for training and testing purposes.  
 - Training partition contains a total of 6,846 total images. 

@@ -123,3 +123,10 @@ Gan-based facial editing of real videos. arXiv preprint arXiv:2201.08361, 2022
 [5] C. Yu, J. Wang, C. Peng, C. Gao, G. Yu, and N. Sang. Bisenet: Bilateral segmentation
 network for real-time semantic segmentation. In Proceedings of the European conference
 on computer vision (ECCV), pages 325–341, 2018
+
+
+
+## Acknowledgment
+This material is based upon work supported by DARPA under Contract No. HR0011-20-C-0129. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA.
+
+DISTRIBUTION A. Approved for public release: distribution unlimited.

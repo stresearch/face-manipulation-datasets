@@ -1,5 +1,5 @@
 # Face Manipulation Datasets 
-[<img src="badge-navy.svg"  alt="" width="50">](str.us) <!-- omit in toc -->
+[<img src="badge-navy.svg"  alt="" width="50">](https:/www.str.us) <!-- omit in toc -->
 
 [*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov STR, Woburn, Massachusetts, United States*](report.pdf)  
 
@@ -128,6 +128,6 @@ on computer vision (ECCV), pages 325–341, 2018
 
 
 ## Acknowledgment
-This material is based upon work supported by DARPA under Contract No. HR0011-20-C-0129. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA.
+*This material is based upon work supported by DARPA under Contract No. HR0011-20-C-0129. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA.*
 
-DISTRIBUTION A. Approved for public release: distribution unlimited.
+*DISTRIBUTION A. Approved for public release: distribution unlimited.*

@@ -1,7 +1,7 @@
 # Face Manipulation Datasets <!-- omit in toc -->
 [<img src="badge-navy.svg"  alt="" width="50">](https://www.str.us) 
 
-[*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov, STR, Woburn, Massachusetts, United States* ](TBD) 
+[*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov, STR, Woburn, Massachusetts, United States* (Under Review) ](TBD) 
 
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)

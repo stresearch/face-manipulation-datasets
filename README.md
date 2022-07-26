@@ -1,7 +1,7 @@
 # Face Manipulation Datasets <!-- omit in toc -->
 [<img src="badge-navy.svg"  alt="" width="50">](https://www.str.us) 
 
-[*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov STR, Woburn, Massachusetts, United States*](report.pdf)  
+[*Comprehensive Dataset of Face Manipulations for Development and Evaluation Forensic Tools, Brian DeCann and Kirill Trapeznikov, STR, Woburn, Massachusetts, United States* ](TBD) 
 
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)
@@ -9,7 +9,9 @@
 - [FFHQ-FM (Face Manipulations) in-the-wild](#ffhq-fm-face-manipulations-in-the-wild)
   - [Evaluation Protocol](#evaluation-protocol-1)
   - [Download](#download-1)
+- [Contact](#contact)
 - [References](#references)
+- [Acknowledgment](#acknowledgment)
 
 ## CelebHQ-FM (Face Manipulations)
 
@@ -49,12 +51,11 @@ For our portrait-style face manipulation dataset, we supply two challenges: dete
      - The objective of the classification experiment is to classify the type of edit in a manipulated image. For a given image in the testing partition return: 
 
 ### Download
-|        | Train | Test |
-| ---    | ---   | ---  |
-| images | [train.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/train.zip)    | [test.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/test.zip) |
-| meta  | [train.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/Train.csv) | [test.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/Test_fixed.csv) |
 
-
+|        | Train | Test |  
+| ---    | ---   | ---  |  
+| images | [train.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/train.zip)    | [test.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/test.zip) |  
+| meta  | [train.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/Train.csv) | [test.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/celebhq-fm/Test_fixed.csv) |  
 
 
 ## FFHQ-FM (Face Manipulations) in-the-wild
@@ -104,7 +105,9 @@ We supply three challenges: detection, localization, and classification. A descr
 | images | [train.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/train_jpg.zip)    | [test.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/test_jpg.zip) | [test_dm.zip](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/test_jpg_dm.zip) |
 | meta  | [train.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/Train_jpg_v0.csv) | [test.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/Test_jpg_v0.csv) | [test-dm.csv](https://38cc41b1-f06c-4fbf-a324-696bb06cd45e.s3.amazonaws.com/face-manipulations-datasets/ffhq-fm/Test_jpg_dm_v0.csv)
 
+## Contact
 
+For more information: kirill.trapeznikov@str.us
 
 ## References
 [1] C.-H. Lee, Z. Liu, L. Wu, and P. Luo. Maskgan: Towards diverse and interactive
@@ -124,8 +127,6 @@ Gan-based facial editing of real videos. arXiv preprint arXiv:2201.08361, 2022
 [5] C. Yu, J. Wang, C. Peng, C. Gao, G. Yu, and N. Sang. Bisenet: Bilateral segmentation
 network for real-time semantic segmentation. In Proceedings of the European conference
 on computer vision (ECCV), pages 325–341, 2018
-
-
 
 ## Acknowledgment
 *This material is based upon work supported by DARPA under Contract No. HR0011-20-C-0129. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA.*

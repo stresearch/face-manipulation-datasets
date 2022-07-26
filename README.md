@@ -15,7 +15,7 @@
 
 ## CelebHQ-FM (Face Manipulations)
 
-We compiled a dataset of edited portrait-style images. The image data was sourced from a subset of the [CelebA-HQ dataset](\cite{CelebAMask-HQ}). In our subset, we only consider identities that appear at least twice (i.e., there are at least two images of a given identity) in the image data.
+We compiled a dataset of edited portrait-style images. The image data was sourced from a subset of the [CelebA-HQ dataset](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html). In our subset, we only consider identities that appear at least twice (i.e., there are at least two images of a given identity) in the image data.
 
 ![](celebhqfm.png)
 
@@ -60,7 +60,7 @@ For our portrait-style face manipulation dataset, we supply two challenges: dete
 
 ## FFHQ-FM (Face Manipulations) in-the-wild
 
-We compiled a dataset of edited in-the-wild-style images. The image data was sourced from a subset of the [Flickr-Faces-HQ (FFHQ)(link) [3].
+We compiled a dataset of edited in-the-wild-style images. The image data was sourced from a subset of the [Flickr-Faces-HQ (FFHQ)](https://github.com/NVlabs/ffhq-dataset) [3].
 - Our edited in-the-wild dataset consists of a randomly sampled subset of the 70,000 raw in-the-wild FFHQ images.
 -  In our subset, we allow for the possibility that an image contains more than one person (face). This potentially adds an additional challenge in detecting and localizing edited faces. 
 

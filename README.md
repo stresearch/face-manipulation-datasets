@@ -64,7 +64,7 @@ We compiled a dataset of edited in-the-wild-style images. The image data was sou
 - Our edited in-the-wild dataset consists of a randomly sampled subset of the 70,000 raw in-the-wild FFHQ images.
 -  In our subset, we allow for the possibility that an image contains more than one person (face). This potentially adds an additional challenge in detecting and localizing edited faces. 
 
-![](ffhq-fm.png)
+![](ffhq-fm2.png)
 
 
 **Manipulation Model:** We adopt the approach from Tzaban et al. to inject edits to in-the-wild images [4]. Edits are localized to a region of the full-scene image. This is in contrast to the portrait-style face manipulation dataset, where images are fully synthesized from face-based GAN's.

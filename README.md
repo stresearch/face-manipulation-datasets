@@ -1,7 +1,7 @@
 # Face Manipulation Datasets <!-- omit in toc -->
 [<img src="badge-navy.svg"  alt="" width="50">](https://www.str.us) 
 
-[*Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools, Brian DeCann and Kirill Trapeznikov, STR, Woburn, Massachusetts, United States* (Under Review, coming soon) ](TBD) 
+<!-- *Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools, Brian DeCann and Kirill Trapeznikov, STR, Woburn, Massachusetts, United States* (Under Review, coming soon) -->
 
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)
@@ -107,7 +107,8 @@ We supply three challenges: detection, localization, and classification. A descr
 
 ## Contact
 
-For more information: kirill.trapeznikov@str.us
+Kirill Trapeznikov kirill.trapeznikov@str.us  
+Brian DeCann brian.decann@str.us  
 
 ## References
 [1] C.-H. Lee, Z. Liu, L. Wu, and P. Luo. Maskgan: Towards diverse and interactive

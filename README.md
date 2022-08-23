@@ -1,14 +1,15 @@
 # Face Manipulation Datasets <!-- omit in toc -->
 [<img src="badge-navy.svg"  alt="" width="50">](https://www.str.us) 
 
-Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools.
+*[Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools.](face_manipulation_dataset.pdf)  
+Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.us), Technical Report.*
 
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)
   - [Download](#download)
 - [FFHQ-FM (Face Manipulations) in-the-wild](#ffhq-fm-face-manipulations-in-the-wild)
   - [Evaluation Protocol](#evaluation-protocol-1)
-  - [Download](#download-1)
+  - [Download](#download-1)Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.us),
 - [Contact](#contact)
 - [References](#references)
 - [Acknowledgment](#acknowledgment)

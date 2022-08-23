@@ -4,6 +4,7 @@
 *[Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools.](face_manipulation_dataset.pdf)  
 Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.us), Technical Report.*
 
+
 - [CelebHQ-FM (Face Manipulations)](#celebhq-fm-face-manipulations)
   - [Evaluation Protocol](#evaluation-protocol)
   - [Download](#download)

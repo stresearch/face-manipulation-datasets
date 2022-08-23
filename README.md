@@ -10,7 +10,7 @@ Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.u
   - [Download](#download)
 - [FFHQ-FM (Face Manipulations) in-the-wild](#ffhq-fm-face-manipulations-in-the-wild)
   - [Evaluation Protocol](#evaluation-protocol-1)
-  - [Download](#download-1)Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.us),
+  - [Download](#download-1)
 - [Contact](#contact)
 - [References](#references)
 - [Acknowledgment](#acknowledgment)

@@ -131,6 +131,12 @@ Gan-based facial editing of real videos. arXiv preprint arXiv:2201.08361, 2022
 network for real-time semantic segmentation. In Proceedings of the European conference
 on computer vision (ECCV), pages 325–341, 2018
 
+## How to Cite
+Please include the following citation when utilizing this dataset:
+```
+arXiv link pending
+```
+
 ## Acknowledgment
 *This material is based upon work supported by DARPA under Contract No. HR0011-20-C-0129. Any opinions, findings and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of DARPA.*
 

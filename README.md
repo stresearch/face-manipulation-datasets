@@ -134,7 +134,16 @@ on computer vision (ECCV), pages 325–341, 2018
 ## How to Cite
 Please include the following citation when utilizing this dataset:
 ```
-arXiv link pending
+@misc{https://doi.org/10.48550/arxiv.2208.11776,
+  doi = {10.48550/ARXIV.2208.11776},
+  url = {https://arxiv.org/abs/2208.11776},
+  author = {DeCann, Brian and Trapeznikov, Kirill},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Multimedia (cs.MM), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
 ```
 
 ## Acknowledgment

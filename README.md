@@ -1,7 +1,7 @@
 # Face Manipulation Datasets <!-- omit in toc -->
 [<img src="badge-navy.svg"  alt="" width="50">](https://www.str.us) 
 
-*[Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools.](face_manipulation_dataset.pdf)  
+*[Comprehensive Dataset of Face Manipulations for Development and Evaluation of Forensic Tools.](https://arxiv.org/abs/2208.11776)  
 Brian DeCann (brian.decann@str.us), Kirill Trapeznikov (kirill.trapeznikov@str.us), Technical Report.*
 
 
